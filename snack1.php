@@ -33,6 +33,12 @@ $matches = [
   <title>Snack 1</title>
 </head>
 <body>
+    <h1 class="text-center mt-5"></h1>
+    <div>
+        <?php foreach ($matches as $match) { ?>
+        <p class="fw-bold bg-primary-subtle"><?php echo $match['homeTeam']; ?> vs <?php echo $match['hostTeam']; ?> | <?php echo $match['homeScore']; ?> - <?php echo $match['hostScore']; ?></p>
+        <?php } ?>
+    </div>
     
 </body>
 </html>
